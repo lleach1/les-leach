@@ -1,0 +1,583 @@
+/*
+This style is inspired by Design made in Germany: www.designmadeingermany.de
+converted to a bBlog skin with permission from Martin Rack: www.martinrack.de
+Made for bBlog by Dominic Frohlof: www.pixelpope.com
+Version: 0.1 beta / 2005/05/21
+*/
+
+/* reset everything to zero for full control*/
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, table, block, div, blockquote
+{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+/*----------------------------------------- */
+body
+{
+	margin: 0px;
+	background-color: #ccc;
+	/*background-image: url(../images/full-bg.jpg);*/
+	font-size: small;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	font-family: "Times New Roman",Times,"Courier New",Courier,serif;
+}
+
+a
+{
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: black;
+}
+
+hr
+{
+	margin: 0px auto 0px auto;
+	border-color: #F99;
+	border-width: 0 0 1px 0;
+	border-style: dashed;
+	color: #FFF;
+	font-size: 1px;
+	width: 100%;
+	height: 1px;
+	padding: 0px;
+}
+#dotbg
+{
+	width: 780px;
+	height: auto;
+	background-image: url(../images/780-tile.gif);
+	background-repeat: repeat-y;
+	background-position: center top;
+	background-attachment: fixed;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 5px 0px;
+}
+
+#topnav
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 760px;
+	background-image: url(../images/brown_bag-top.gif);
+	background-position: 0px 0px;
+	margin: 0px auto 0px auto;
+	text-align: center;
+	padding: 0px;
+}
+
+#mainnav
+{
+	position: absolute;
+	top: 99px;
+	left: 379px;
+	height: 20px;
+	width: 250px;
+}
+
+
+.mainnav-off, .mainnav-on
+{
+	width: 80px;
+	height: 20px;
+	float: left;
+	margin: 0px 2px 0px 0px;
+	background-color: #E0E0E0;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url(../images/nav-off-bg.gif);
+}
+
+/*added to fit photos on top nav*/
+.mainnav-off, .mainnav-on { width: 62px; }
+
+#mainnav
+{
+	width: 270px;
+	left: 369px;
+}
+
+/*------------*/
+
+.mainnav-off:hover { background-image: url(../images/nav-on-bg.gif); }
+.mainnav-on { background-image: url(../images/nav-on-bg.gif); }
+
+.mainnav-off a,.mainnav-on a
+{
+	text-decoration: none;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	position: relative;
+	top: 3px;
+	left: 0px;
+}
+
+#tabnav
+{
+	position: absolute;
+	top: 170px;
+	left: 300px;
+	height: 25px;
+	width: 400px;
+}
+
+.tab
+{
+	height: 25px;
+	float: left;
+	margin: 0px;
+	width: auto;
+}
+
+.tabnav-on, .tabnav-off
+{
+	background-color: #F4D9A4;
+	background-image: url(../images/tabbg-off.gif);
+	height: 25px;
+	background-position: right top;
+	float: left;
+	padding: 0px 0px 0px 16px;
+	border-color: #666;
+	border-width: 0px 0px 0px 1px;
+	border-style: solid;
+}
+
+.tabnav-off
+{
+	background-color: #FFF;
+	background-image: url(../images/tabbg-on.gif);
+}
+
+.tabrt-off, .tabrt-on
+{
+	height: 25px;
+	width: 22px;
+	float: left;
+	background-image: url(../images/tabrtbg-off.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.tabrt-off { background-image: url(../images/tabrtbg-on.gif); }
+
+.tabrt
+{
+	position: relative;
+	top: 0px;
+	left: 7px;
+}
+
+.tabnav-off a,.tabnav-on a
+{
+	text-decoration: none;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	position: relative;
+	top: 6px;
+	left: 0px;
+}
+
+.tabnav-off a:hover,.tabnav-on a:hover { color: #666; }
+
+#bagbg
+{
+	width: 760px;
+	background-image: url(../images/brown_bag-edged.gif);
+	background-position: center -2px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 12px 0px;
+	background-repeat: repeat-y;
+}
+
+#notebg
+{
+	width: 760px;
+	background-image: url(../images/note-paper.gif);
+	background-position: center top;
+	margin: 0px;
+	padding: 0px;
+	background-repeat: repeat-y;
+}
+
+.bpost
+{
+	border-color: #E0E0E0;
+	border-width: 1px 1px 0px 1px;
+	border-style: solid solid none solid;
+	width: 675px;
+	background-color: white;
+	position: relative;
+	left: 45px;
+	top: 35px;
+}
+
+.bpost-title
+{
+	position: relative;
+	left: -12px;
+	top: -45px;
+	width: 363px;
+	height: auto;
+	background-image: url(../images/title-tape.gif);
+	background-repeat: no-repeat;
+}
+
+.bpost-title-txt
+{
+	padding: 30px 0px 8px 80px;
+	width: 200px;
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+}
+
+.bpost-content
+{
+	position: relative;
+	left: 0px;
+	top: -33px;
+	padding: 0px 20px 0px 18px;
+	width: auto;
+	height: auto;
+}
+
+.bpost-content p { margin: 6px 0 0 0; }
+.bpost-content ul { margin: 6px 0px 0px 15px; }
+.bpost-content ol { margin: 6px 0px 0px 15px; }
+
+.bpost-img-rt, .bpost-img-lf
+{
+	position: relative;
+	/*border-color: #E0E0E0;
+	border-width: 1px;
+	border-style: solid;*/
+	padding: 20px 7px 7px 7px;
+	float: right;
+	margin: 0 0 0 2px;
+	text-align: center;
+	background-image: url(../images/pack-tape.jpg);
+	font-size: x-small;
+}
+
+
+.bpost-img-rt img { margin: 0px 0px 4px 0; }
+.bpost-img-lf
+{
+	float: left;
+	margin: 0 4px 0 0;
+	
+}
+.img-rt, .img-lf
+{
+	position: relative;
+	padding: 4px 6px 6px 6px;
+	float: right;
+	text-align: center;
+	font-size: x-small;
+	background-image: url(../images/brown_bag-edged.gif);
+	background-position: center top;
+	margin: 4px 0 0 6px;
+	background-repeat: repeat-y;
+	background-color: #E0E0E0;
+}
+.img-lf
+{
+	float: left;
+	margin: 4px 8px 0 0;
+}
+.img-rt img { margin: 2px 0 2px 0; }
+.img-lf img { margin: 2px 0 2px 0; }
+.photo-tape{
+	position: absolute;
+	left: 40%;
+	top: 0px;
+	height: 25px;
+	width: 85px;
+}
+.bpost-img-lf div
+{
+	text-align: center;
+	font-size: x-small;
+	margin: 2px 0 0 0;
+	width: 250px;
+}
+.bpost-img-lf span
+{
+	text-align: center;
+	font-size: x-small;
+	margin: 2px 0 0 0;
+}
+.bpost-bot
+{
+	position: absolute;
+	left: 0px;
+	bottom: -18px;
+}
+
+.bpost-spacer
+{
+	width: auto;
+	height: 70px;
+	clear: both;
+}
+
+#credits
+{
+	width: 730px;
+	margin: 5px auto 5px auto;
+	
+}
+
+.credit-txt
+{
+	background-color: #FFF;
+	background-image: url(../images/nav-off-bg.gif);
+	padding: 2px 0px 2px 0px;
+	width: 180px;
+	text-align: center;
+}
+a.post-title
+{
+	font-size: medium;
+	font-weight: bold;
+	color: black;
+}
+
+.posted
+{
+	margin-top: 12px;
+	clear: both;
+}
+
+.comment-title, .archive-title
+{
+	position: relative;
+	left: -12px;
+	top: -45px;
+	width: 363px;
+	height: auto;
+	background-image: url(../images/comment-tape.gif);
+	background-repeat: no-repeat;
+}
+
+/* form stuff ---------------------------------------*/
+.formleft { line-height: 20px; }
+
+.formright
+{
+	position: absolute;
+	top: -3px;
+	left: 210px;
+	width: 250px;
+}
+
+.formfieldcontainer
+{
+	margin: 10px 0 0 0;
+	clear: both;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 635px;
+	margin: 6px 0 0 0;
+}
+
+textarea
+{
+	margin: 0px;
+	outline: none;
+	display: block;
+}
+
+
+.formfield
+{
+	width: 240px;
+	border-color: #666;
+	border-width: 1px;
+	border-style: solid;
+	padding: 0 2px 0 2px;
+	font-size: small;
+	font-family: "Times New Roman",Times,"Courier New",Courier,serif;
+	height: 20px;
+	background-image: url(../images/nav-on-bg.gif);
+	background-color: #f3f3f3;
+}
+
+.commentsfield
+{
+	width: 450px;
+	border-color: #666;
+	border-width: 1px;
+	border-style: solid;
+	padding: 0 0px 0 12px;
+	font-size: small;
+	font-family: "Times New Roman",Times,"Courier New",Courier,serif;
+	background-image: url(../images/note-paper.gif);
+	background-color: #f3f3f3;
+	background-position: -94px top;
+}
+.formbutton
+{
+	border-color: #666;
+	border-width: 1px;
+	border-style: solid;
+	font-size: small;
+	font-family: "Times New Roman",Times,"Courier New",Courier,serif;
+	background-image: url(../images/nav-on-bg.gif);
+	background-color: #f3f3f3;
+	font-weight: bold;
+	padding: 2px;
+	cursor: pointer;
+}
+
+/* resume stuff ----------------------------- */
+
+#resume-top, #contact-top
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 667px;
+	height: 64px;
+	margin: 0px auto 0px auto;
+	background-image: url(../images/resume-frame-top.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#resume-title, #contact-title
+{
+	position: absolute;
+	top: 14px;
+	left: 50px;
+	width: 310px;
+	background-image: url(../images/archive-tape.gif);
+	background-position: right top;
+	padding: 7px 0px 7px 12px;
+	margin: 4px 0px 6px 0px;
+	background-repeat: no-repeat;
+	font-size: medium;
+	font-weight: bold;
+}
+#contact-title
+{
+		width: 230px;
+		text-align: center;
+}
+#resume-mid, #contact-mid
+{
+	width: 667px;
+	margin: 0px auto 0px auto;
+	background-image: url(../images/resume-frame-side.gif);
+	background-repeat: repeat-y;
+}
+
+#resume-content, #contact-content
+{
+	width: 590px;
+	margin: 0px auto 0px auto;
+}
+#contact-content { font-size: medium; }
+.resume-header
+{
+	font-size: medium;
+	padding: 10px 0 0 0;
+}
+
+.contact-header
+{
+	font-size: medium;
+	padding: 10px 0 0 0;
+	font-weight: bold;
+}
+
+.resume-block, .contact-block { padding: 0 0 0 12px; }
+.resume-block ul
+{
+	padding: 0 0 0 20px;;
+	margin: 0px;
+}
+#resume-bot, #contact-bot
+{
+	width: 667px;
+	height: 80px;
+	margin: 0px auto 0px auto;
+	background-image: url(../images/resume-frame-bot.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/* main content stuff --------------------------- */
+
+
+.date
+{
+	margin: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* archive stuff -------------------- */
+
+.archive-listing
+{
+	width: 600px;
+	background-image: url(../images/archive-tape.gif);
+	background-position: right top;
+	padding: 7px 0px 7px 12px;
+	margin: 4px 0px 6px 0px;
+	background-repeat: no-repeat;
+
+}
+
+a.archive-link
+{
+	font-weight: bold;
+	color: black;
+}
+/* side stuff -------------------------- */
+
+
+/* comments ----------------------- */
+.comment-block
+{
+	border-width: 1px 0 0 0;
+	border-style: dashed none none none;
+	padding: 7px 0 0 0;
+	border-color: #F99;
+	width: 635px;
+}
+
+.comments-head
+{
+	font-weight: bold;
+	margin: 0px;
+}
+
+.comments-body { }
+
+.comments-post
+{
+	color: #666;
+	font-size: x-small;
+	margin: 2px 0 8px 0;
+}
+
+.trackback-url { }
+.trackback-body { }
+.trackback-post { }
+#author, #email, #url, #text, #title { }
+#footer { clear: both; }
+
+/* calendar css */
+
